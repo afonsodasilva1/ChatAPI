@@ -1,1 +1,1 @@
-console.log('arquivo rodando');
+console.log('Teste Node');

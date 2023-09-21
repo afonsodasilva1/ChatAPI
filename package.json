@@ -4,7 +4,7 @@
   "description": "Template de configurações para utilizar o NodeJS em conjunto com o TypeScript",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/index.ts",
+    "start": "nodemon ./src/index.ts",
     "build": "sucrase ./src -d ./dist --transforms typescript,imports"
   },
   "keywords": [],
