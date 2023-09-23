@@ -1,1 +1,1 @@
-console.log('Teste Node');
+console.log('Hello Word!');
