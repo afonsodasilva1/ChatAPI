@@ -1,3 +1,6 @@
 import { App } from "./app";
 
-new App().getApp();
+const app = new App()
+
+app.ateMesmoIsso();
+app.getApp();
