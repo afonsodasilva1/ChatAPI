@@ -1,1 +1,3 @@
-console.log('Hello, King Dacis');
+import { App } from "./app";
+
+new App().getApp();
