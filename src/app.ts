@@ -1,7 +1,6 @@
 import express from 'express';
+import mongoose, { Number } from 'mongoose';
 import cors from 'cors';
-import mongoose from 'mongoose';
-import functions from '../node_modules/lodash/functions';
 
 export class App{
     private express: express.Application;
@@ -10,6 +9,7 @@ export class App{
     constructor(){
         this.express = express();
         this.listen();
+       // this.database()
     }
 
     public getApp(): express.Application{
@@ -24,6 +24,19 @@ export class App{
     }
 
     public ateMesmoIsso(): void{
-        console.log('Até mesmo isso?!')
+        console.log('Até mesmo isso?! 168.720')
+    }
+
+    public Somar(n1: number, n2: number): number{
+        const soma = n1 + n2;
+
+        return soma;
+    }
+
+    private database(): void{
+        mongoose.connect('mongodb+srv://kingdacis:<password>@cluster0.xfyjsj1.mongodb.net/?retryWrites=true&w=majority', {
+           // useUnifiedTopology: true,
+            //useNewUrlParser: true
+        });
     }
 }
